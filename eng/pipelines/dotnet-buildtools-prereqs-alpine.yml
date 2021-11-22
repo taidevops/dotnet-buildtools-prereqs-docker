@@ -17,4 +17,4 @@ stages:
   parameters:
     publicProjectName: ${{ variables.publicProjectName }}
     linuxAmd64Pool:
-      name: $(defaultLinuxAmd64PoolImage)
+      name: ubuntu-latest
