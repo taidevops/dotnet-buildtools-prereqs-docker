@@ -1,0 +1,16 @@
+variables:
+- template: ../../common/templates/variables/dotnet/build-test-publish.yml
+- name: manifest
+  value: manifest.json
+- name: dotnetVersion
+  value: '*'
+- name: osVariant
+  value: ''
+- name: publishReadme
+  value: false
+- name: publicGitRepoUri
+  value: https://github.com/taidevops/dotnet-buildtools-prereqs-docker
+- name: manifestVariables
+  value: --var UniqueId=$(sourceBuildId)
+- name: publicSourceBranch
+  value: main

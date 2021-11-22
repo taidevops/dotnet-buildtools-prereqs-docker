@@ -1,0 +1,55 @@
+{
+  "registry": "github.io",
+  "repos": [
+    {
+      "name": "tnti/prereqs",
+      "images": [
+        {
+          "platforms": [
+            {
+              "dockerfile": "src/alpine/3.9/amd64",
+              "os": "linux",
+              "osVersion": "alpine3.9",
+              "tags": {
+                "alpine-3.9-$(System:TimeStamp)-$(System:DockerfileGitCommitSha)": {},
+                "alpine-3.9": {
+                  "isLocal": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "platforms": [
+            {
+              "dockerfile": "src/alpine/3.13/amd64",
+              "os": "linux",
+              "osVersion": "alpine3.13",
+              "tags": {
+                "alpine-3.13-$(System:TimeStamp)-$(System:DockerfileGitCommitSha)": {},
+                "alpine-3.13": {
+                  "isLocal": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "platforms": [
+            {
+              "dockerfile": "src/centos/7",
+              "os": "linux",
+              "osVersion": "centos7",
+              "tags": {
+                "centos-7-$(System:TimeStamp)-$(System:DockerfileGitCommitSha)": {},
+                "centos-7": {
+                  "isLocal": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
